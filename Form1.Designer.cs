@@ -33,8 +33,8 @@
             botLbl = new Label();
             shoot_button = new Button();
             rockRadio = new RadioButton();
-            paperBtn = new RadioButton();
-            scissorsBtn = new RadioButton();
+            paperRadio = new RadioButton();
+            scissorsRadio = new RadioButton();
             SuspendLayout();
             // 
             // titleLabel
@@ -76,6 +76,7 @@
             shoot_button.TabIndex = 3;
             shoot_button.Text = "Shoot!";
             shoot_button.UseVisualStyleBackColor = true;
+            shoot_button.Click += shoot_button_Click;
             // 
             // rockRadio
             // 
@@ -88,35 +89,35 @@
             rockRadio.Text = "Rock";
             rockRadio.UseVisualStyleBackColor = true;
             // 
-            // paperBtn
+            // paperRadio
             // 
-            paperBtn.AutoSize = true;
-            paperBtn.Location = new Point(491, 314);
-            paperBtn.Name = "paperBtn";
-            paperBtn.Size = new Size(64, 24);
-            paperBtn.TabIndex = 5;
-            paperBtn.TabStop = true;
-            paperBtn.Text = "Paper";
-            paperBtn.UseVisualStyleBackColor = true;
+            paperRadio.AutoSize = true;
+            paperRadio.Location = new Point(491, 314);
+            paperRadio.Name = "paperRadio";
+            paperRadio.Size = new Size(64, 24);
+            paperRadio.TabIndex = 5;
+            paperRadio.TabStop = true;
+            paperRadio.Text = "Paper";
+            paperRadio.UseVisualStyleBackColor = true;
             // 
-            // scissorsBtn
+            // scissorsRadio
             // 
-            scissorsBtn.AutoSize = true;
-            scissorsBtn.Location = new Point(491, 367);
-            scissorsBtn.Name = "scissorsBtn";
-            scissorsBtn.Size = new Size(78, 24);
-            scissorsBtn.TabIndex = 6;
-            scissorsBtn.TabStop = true;
-            scissorsBtn.Text = "Scissors";
-            scissorsBtn.UseVisualStyleBackColor = true;
+            scissorsRadio.AutoSize = true;
+            scissorsRadio.Location = new Point(491, 367);
+            scissorsRadio.Name = "scissorsRadio";
+            scissorsRadio.Size = new Size(78, 24);
+            scissorsRadio.TabIndex = 6;
+            scissorsRadio.TabStop = true;
+            scissorsRadio.Text = "Scissors";
+            scissorsRadio.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1064, 847);
-            Controls.Add(scissorsBtn);
-            Controls.Add(paperBtn);
+            Controls.Add(scissorsRadio);
+            Controls.Add(paperRadio);
             Controls.Add(rockRadio);
             Controls.Add(shoot_button);
             Controls.Add(botLbl);
@@ -135,7 +136,7 @@
         private Label botLbl;
         private Button shoot_button;
         private RadioButton rockRadio;
-        private RadioButton paperBtn;
-        private RadioButton scissorsBtn;
+        private RadioButton paperRadio;
+        private RadioButton scissorsRadio;
     }
 }
